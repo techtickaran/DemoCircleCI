@@ -13,12 +13,12 @@ class ListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
 
-        val resp = UserRepository(ListOfUsersAPI())
-
-        GlobalScope.launch(Dispatchers.Main) {
-
-            val movies =resp.getUsers()
-            Toast.makeText(this@ListActivity,movies.toString(),Toast.LENGTH_SHORT).show()
-        }
+//        val resp = UserRepository(ListOfUsersAPI())
+//
+//        GlobalScope.launch(Dispatchers.Main) {
+//
+//            val movies =resp.getUsers()
+//            Toast.makeText(this@ListActivity,movies.toString(),Toast.LENGTH_SHORT).show()
+//        }
     }
 }

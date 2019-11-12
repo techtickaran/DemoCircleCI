@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="users"
+            type="com.agohra.democircleci.UsersData" />
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{users.name}" />
+
+        <TextView
+            android:id="@+id/surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{users.surname}" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{users.gender}" />
+
+        <TextView
+            android:id="@+id/region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{users.region}" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+</layout>
