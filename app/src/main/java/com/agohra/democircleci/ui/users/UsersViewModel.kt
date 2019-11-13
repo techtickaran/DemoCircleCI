@@ -1,16 +1,18 @@
-package com.agohra.democircleci
+package com.agohra.democircleci.ui.users
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import kotlinx.coroutines.CoroutineScope
+import com.agohra.democircleci.util.coroutine
+import com.agohra.democircleci.data.repo.UserRepository
+import com.agohra.democircleci.data.model.Users
 import kotlinx.coroutines.Job
 
 class UsersViewModel(private val repository: UserRepository) : ViewModel() {
 
-    private val _users = MutableLiveData<List<UsersData>>()
+    private val _users = MutableLiveData<List<Users>>()
     private lateinit var job: Job
-    val users: LiveData<List<UsersData>>
+    val users: LiveData<List<Users>>
         get() = _users
 
     fun getUsers() {

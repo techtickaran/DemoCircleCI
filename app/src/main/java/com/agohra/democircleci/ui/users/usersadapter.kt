@@ -1,12 +1,14 @@
-package com.agohra.democircleci
+package com.agohra.democircleci.ui.users
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.agohra.democircleci.R
 import com.agohra.democircleci.databinding.RawUserItemBinding
+import com.agohra.democircleci.data.model.Users
 
-class usersadapter(private val users: List<UsersData>) : RecyclerView.Adapter<usersadapter.UsersViewHolder>() {
+class usersadapter(private val users: List<Users>) : RecyclerView.Adapter<usersadapter.UsersViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =

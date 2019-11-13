@@ -1,5 +1,6 @@
-package com.agohra.democircleci
+package com.agohra.democircleci.data.network
 
+import com.agohra.democircleci.data.model.Users
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -7,11 +8,11 @@ import retrofit2.http.GET
 
 interface ListOfUsersAPI {
 
-    @GET("api/?amount=100")
-    suspend fun getUsers(): Response<List<UsersData>>
+    @GET("api/?ext&amount=500")
+    suspend fun getUsers(): Response<List<Users>>
 
     companion object{
-        operator fun invoke():ListOfUsersAPI{
+        operator fun invoke(): ListOfUsersAPI {
            return Retrofit.Builder()
                     .addConverterFactory(GsonConverterFactory.create())
                     .baseUrl("https://uinames.com/")

@@ -1,6 +1,5 @@
-package com.agohra.democircleci
+package com.agohra.democircleci.data.repo
 
-import android.webkit.ConsoleMessage
 import retrofit2.Response
 import java.io.IOException
 

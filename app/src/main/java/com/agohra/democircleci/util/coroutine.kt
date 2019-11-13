@@ -1,10 +1,9 @@
-package com.agohra.democircleci
+package com.agohra.democircleci.util
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
-import javax.security.auth.callback.Callback
 
 object coroutine{
     fun<T:Any> ioThenWork(work : suspend (()-> T),callback:((T?)->Unit)) =

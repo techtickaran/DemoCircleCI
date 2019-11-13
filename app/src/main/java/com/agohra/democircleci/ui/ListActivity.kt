@@ -1,11 +1,8 @@
-package com.agohra.democircleci
+package com.agohra.democircleci.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
+import com.agohra.democircleci.R
 
 class ListActivity : AppCompatActivity() {
 

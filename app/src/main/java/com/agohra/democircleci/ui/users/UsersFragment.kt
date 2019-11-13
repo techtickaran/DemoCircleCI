@@ -1,4 +1,4 @@
-package com.agohra.democircleci
+package com.agohra.democircleci.ui.users
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -6,10 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModel
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.agohra.democircleci.R
+import com.agohra.democircleci.data.network.ListOfUsersAPI
+import com.agohra.democircleci.data.repo.UserRepository
 import kotlinx.android.synthetic.main.users_fragment.*
 
 
