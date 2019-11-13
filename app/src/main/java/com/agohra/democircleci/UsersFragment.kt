@@ -24,7 +24,6 @@ class UsersFragment : Fragment() {
         return inflater.inflate(R.layout.users_fragment, container, false)
     }
 
-
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         val api = ListOfUsersAPI()
