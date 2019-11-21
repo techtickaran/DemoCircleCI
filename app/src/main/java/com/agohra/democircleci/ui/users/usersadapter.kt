@@ -8,7 +8,7 @@ import com.agohra.democircleci.R
 import com.agohra.democircleci.databinding.RawUserItemBinding
 import com.agohra.democircleci.data.model.Users
 
-class usersadapter(private val users: List<Users>) : RecyclerView.Adapter<usersadapter.UsersViewHolder>() {
+class usersadapter(private val users: List<Users>,private val  listener: RecyclerviewItemClickListener) : RecyclerView.Adapter<usersadapter.UsersViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
@@ -24,6 +24,9 @@ class usersadapter(private val users: List<Users>) : RecyclerView.Adapter<usersa
     override fun onBindViewHolder(holder: UsersViewHolder, position: Int) {
 
         holder.rawUserItemBinding.users = users[position]
+        holder.rawUserItemBinding.profile.setOnClickListener(){
+                listener.onRecyclerItemClick(holder.rawUserItemBinding.profile,users[position])
+        }
 
     }
 
