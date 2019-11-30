@@ -7,7 +7,7 @@
 
     <variable
         name="viewModel"
-        type="com.agohra.democircleci.ui.auth.AuthViewModel" />
+        type="com.app.democircleci.ui.auth.AuthViewModel" />
 
     </data>
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.agohra.democircleci">
+    package="com.app.democircleci">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,9 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.auth.SignUpActivity"/>
-        <activity android:name=".ui.ListActivity" />
-        <activity android:name=".ui.auth.LoginActivity">
+        <activity android:name="com.app.democircleci.ui.auth.SignUpActivity"/>
+        <activity android:name="com.app.democircleci.ui.ListActivity" />
+        <activity android:name="com.app.democircleci.ui.auth.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
