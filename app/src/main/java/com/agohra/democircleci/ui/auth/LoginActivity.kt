@@ -3,7 +3,8 @@ package com.agohra.democircleci.ui.auth
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.ViewModel
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.agohra.democircleci.R
 import com.agohra.democircleci.databinding.ActivityLoginBinding
@@ -25,8 +26,11 @@ class LoginActivity : AppCompatActivity(),AuthListener {
         toast("onStarted")
     }
 
-    override fun onSuccess() {
-        toast("onSuccess")
+    override fun onSuccess(loginResponse: LiveData<String>) {
+
+        loginResponse.observe(this, Observer {
+            toast(it)
+        })
     }
 
     override fun onFailure(msg :String) {
